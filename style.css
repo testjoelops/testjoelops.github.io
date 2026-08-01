@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020202;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Welcome Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:first-child {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+
+    /* Subtle red glow behind the title */
+    background:
+        radial-gradient(
+            circle,
+            rgba(120, 0, 0, 0.18) 0%,
+            rgba(120, 0, 0, 0.08) 25%,
+            transparent 60%
+        );
+}
+
+section:first-child p:first-child {
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+section:first-child h1 {
+    font-size: 6rem;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+    text-shadow: 0 0 18px rgba(140, 0, 0, 0.3);
+}
+
+section:first-child p:last-child {
+    max-width: 700px;
+    color: #b5b5b5;
+    font-size: 1.1rem;
+}
+
+/* Newsletter */
+
+#form-container {
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#form-container h2 {
+    margin-bottom: 10px;
+}
+
+#form-container p {
+    color: #999;
+    margin-bottom: 25px;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#newsletter-form input {
+    width: 260px;
+    padding: 10px 16px;
+
+    background-color: #111;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 25px;
+
+    outline: none;
+}
+
+#newsletter-form input:focus {
+    border-color: #7a0000;
+}
+
+#newsletter-form button {
+    padding: 10px 20px;
+
+    background-color: #6f0000;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background-color: #900000;
+}
